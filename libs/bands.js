@@ -1,0 +1,1 @@
+Meet = new Meteor.Collection('meet');
