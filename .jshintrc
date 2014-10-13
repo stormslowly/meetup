@@ -98,6 +98,7 @@
                 "expect":true,
                 "env":true,
                 "Meteor":true,
-                "Template":true
+                "Template":true,
+                "Meet" :true
             } // additional predefined global variables
 }
