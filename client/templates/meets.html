@@ -1,38 +1,32 @@
 <template name="meets">
 
-  <h1> Meets here</h1>
+<div class="container">
+  
+    
   {{#if meets.count }}
     {{#each meets}}
 
-    <h1>{{title}}</h1>
-    <div>
-      <small>{{shortTimeDate start}} </small> -
-      <small>{{shortTimeDate end}} </small>
-    </div>
-    <input type="submit" class="join" value="Join" />{{/each}}
+      <div class="row">
+        <h1>{{title}}</h1>
+        <h3> <small>host by</small> {{owner}}  <small>{{shortTimeDate start}} ~ </small> 
+            <small>{{shortTimeDate end}} </small></h3>    
+      </div>
+      <div class="row">
+        <div class=" btn-group small">
+          <button type="button" class="btn btn-default">
+          Join
+            <span class="glyphicon glyphicon-user"></span>
+          </button>
+          <button type="button" class="btn btn-default">Like
+            <span class="glyphicon glyphicon-thumbs-up"></span>
+          </button>
+        </div>
+      </div>
+    {{/each}}
 
   {{else}}
     <h2>there is no meeting now , try new One</h2>
   {{/if}}
-
-    <input type="submit" class="new" value="new Meet"/>
-
-
-<div id="newMeetForm" class="modal hide fade">
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-    <h3>Modal header</h3>
-  </div>
-  <div class="modal-body">
-    <p>One fine body…</p>
-  </div>
-  <div class="modal-footer">
-    <a href="#" class="btn">Close</a>
-    <a href="#" class="btn btn-primary">Save changes</a>
-  </div>
 </div>
-
-
-
 
 </template>
