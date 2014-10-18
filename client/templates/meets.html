@@ -4,9 +4,11 @@
   {{#if meets.count }}
     {{#each meets}}
 
-    <h1>{{title}}
-      <small>{{start}} - {{end}}</small>
-    </h1>
+    <h1>{{title}}</h1>
+    <div>
+      <small>{{shortTimeDate start}} </small> -
+      <small>{{shortTimeDate end}} </small>
+    </div>
     <input type="submit" class="join" value="Join" />{{/each}}
 
   {{else}}
