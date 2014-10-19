@@ -16,52 +16,49 @@
             <form class="form-horizontal" name="commentform" method="post" action="send_form_email.php">
 
               <div class="form-group">
-                <label class="control-label col-md-2" for="first_name">Start:</label>
+                <label class="control-label col-md-2" for="meetTitle">Title:</label>
                 <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
                   
-                <input type="text" class="form-control" id="meetTile" placeholder="Meet Title">
+                <input type="text" class="form-control" id="meetTitle" placeholder="Meet Title">
                 </div>
               </div>
 
               <div class="form-group">
 
-                <label class="control-label col-md-2" for="first_name">Start:</label>
+                <label class="control-label col-md-2" for="startDatetime">Start:</label>
 
                 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                  <input type="date" name="start" id="inputStart" class="form-control" value="" required="required" title="">
+                  <input type="date" name="start" id="startDate" class="form-control" value="" required="required" title="">
                 </div>
                 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                  <input type="time" name="" id="input" class="form-control" value="" required="required" title="">
+                  <input type="time" name="" id="startTime" class="form-control" value="" required="required" title="">
                 </div>
               </div>
               <div class="form-group">
 
-                <label class="control-label col-md-2" for="first_name">End:</label>
+                <label class="control-label col-md-2" for="endDatetime">End:</label>
 
                 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                  <input type="date" name="start" id="inputStart" class="form-control" value="" required="required" title="">
+                  <input type="date" name="start" id="endDate" class="form-control" value="" required="required" title="">
                 </div>
                 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                  <input type="time" name="" id="input" class="form-control" value="" required="required" title="">
+                  <input type="time" name="" id="endTime" class="form-control" value="" required="required" title="">
                 </div>
               </div>
 
               <div class="form-group">
                 <label for="input" class="col-sm-2 control-label">Hoster:</label>
                 <div class="col-sm-4">
-                  <input type="text" name="" id="input" class="form-control" value="" required="required" pattern="" title="">
+                  <input type="text" name="" id="hoster" class="form-control" value="" required="required" pattern="" title="">
                 </div>
               </div>
               <div class="form-group">
                 <label class="col-sm-2 control-label">Detail:</label>
                 <div class="col-sm-10 col-sm-offset-2">
-                   <textarea class="form-control" rows="3"></textarea>
+                   <textarea class="form-control" rows="3" placholder="leave blank if you dont'w need"></textarea>
                 </div>
               </div>
-
-
             </form>
-
 
             <div class="modal-footer">
               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
