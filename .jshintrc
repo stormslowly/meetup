@@ -99,6 +99,7 @@
                 "env":true,
                 "Meteor":true,
                 "Template":true,
+                "moment":true,
                 "Meet" :true
             } // additional predefined global variables
 }
