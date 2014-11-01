@@ -2,7 +2,11 @@
 /*global moment*/
 Template.meets.helpers({
   meets: function() {
-    return Meet.find();
+    return Meet.find({}, {
+      sort: {
+        start: -1
+      }
+    });
   },
 
   shortTimeDate: function(dateStr) {
