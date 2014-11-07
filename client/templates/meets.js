@@ -11,7 +11,7 @@ Template.meets.helpers({
 
   shortTimeDate: function(dateStr) {
     var mm = moment(dateStr);
-    return mm.format('YYYY-MM-DD HH:MM');
+    return mm.format('YYYY-MM-DD HH:mm');
   }
 
 });

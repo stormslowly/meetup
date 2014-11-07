@@ -51,16 +51,15 @@ Template.newMeet.events({
 
     Meet.insert({
       title: title,
-      start: startDatetime.toString(),
-      end: endDateTime.toString(),
-      hoster: hoster
+      start: startDatetime.toDate(),
+      end: endDateTime.toDate(),
+      hoster: hoster,
+      detail: detail
     });
 
     $('#newMeetForm').modal('toggle');
 
-    $('#newMeetForm').val('');
-
-
-
+    $('#newMeetForm input').val('');
+    $('#newMeetForm textarea').val('');
   }
 });
